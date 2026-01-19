@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural Engineering Section - KNUST Civil Engineering</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo-section">
+                <img src="/IMG/KNUST_logo-Vector_0.jpg" alt="KNUST Logo" class="knust-logo">
+                <a href="#" class="logo" onclick="showPage('home')">KNUST <span>Civil Engineering</span></a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About Us</a></li>
+                <li><a href="#" onclick="showPage('faculty')">Faculty</a></li>
+                <li><a href="#" onclick="showPage('research')">Research</a></li>
+                <li><a href="#" onclick="showPage('news')">News & Events</a></li>
+                <li><a href="#" onclick="showPage('programmes')">Programmes</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <section class="hero">
+            <div class="carousel">
+                <div class="carousel-slide active">
+                    <div class="carousel-overlay"></div>
+                    <img src="https://civil.knust.edu.gh/sites/civil.knust.edu.gh/files/2018-02/civil%202%20slide.jpg" alt="Modern structural engineering">
+                    <div class="carousel-content">
+                        <h1>KNUST Civil Engineering </h1>
+                        <h1>Structural Engineering </h1>
+                        <p>Building the foundations of tomorrow's infrastructure</p>
+                        <a href="#" class="cta-button" onclick="showPage('research')">Explore Our Research</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="carousel-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1600&h=900&fit=crop" alt="Civil engineering construction">
+                    <div class="carousel-content">
+                        <h1>Innovative Research & Development</h1>
+                        <p>Advancing structural engineering solutions for Africa and beyond</p>
+                        <a href="#" class="cta-button" onclick="showPage('faculty')">Meet Our Faculty</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="carousel-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1600&h=900&fit=crop" alt="Laboratory research">
+                    <div class="carousel-content">
+                        <h1>Modern Facilities</h1>
+                        <p>State of the art laboratories and computational resources</p>
+                        <a href="#" class="cta-button" onclick="showPage('programmes')">Apply to Our Programmes</a>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="carousel-overlay"></div>
+                    <img src="https://civil.knust.edu.gh/sites/civil.knust.edu.gh/files/inline-images/shortcoursesimage_0.jpg" alt="Bridge construction">
+                    <div class="carousel-content">
+                        <h1>Excellence in Education</h1>
+                        <p>Training the next generation of structural engineers</p>
+                        <a href="#" class="cta-button" onclick="showPage('about')">Learn More</a>
+                    </div>
+                </div>
+                <button class="carousel-prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <button class="carousel-next" onclick="moveCarousel(1)">&#10095;</button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" onclick="currentSlide(0)"></span>
+                    <span class="indicator" onclick="currentSlide(1)"></span>
+                    <span class="indicator" onclick="currentSlide(2)"></span>
+                    <span class="indicator" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="reveal">
+                <h2 class="section-title">Our Focus Areas</h2>
+                <p class="section-subtitle">Leading research in structural engineering for sustainable and resilient infrastructure</p>
+            </div>
+            
+            <div class="research-grid">
+                <div class="research-card reveal">
+                    <h3>Structural Analysis and Design</h3>
+                    <p>Advanced computational methods for analyzing complex structural systems, including finite element analysis and nonlinear structural behavior.</p>
+                </div>
+                <div class="research-card reveal">
+                    <h3>Earthquake Engineering</h3>
+                    <p>Seismic design and retrofitting of structures to enhance resilience against earthquake hazards in Ghana and West Africa.</p>
+                </div>
+                <div class="research-card reveal">
+                    <h3>Sustainable Materials</h3>
+                    <p>Research into innovative and sustainable construction materials, including natural fibers, recycled aggregates, and local materials.</p>
+                </div>
+                <div class="research-card reveal">
+                    <h3>Machine Learning</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam amet aut non distinctio dolore aperiam quaerat ipsam quis unde nobis.</p>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+
+    <!-- About Us Page -->
+    <div id="about" class="page">
+        <section class="section" style="padding-top: 120px;">
+            <div class="reveal">
+                <h2 class="section-title">About the Structural Section</h2>
+                <p class="section-subtitle">Excellence in structural engineering education and research since 1952</p>
+            </div>
+
+            <div class="reveal">
+                <p style="font-size: 1.1rem; line-height: 1.9; margin-bottom: 2rem; color: var(--text);">
+                    The Structural Engineering Section of the Department of Civil Engineering at KNUST has been at the forefront of structural engineering education and research in Ghana and West Africa for decades. Our faculty members are internationally recognized experts who contribute to advancing knowledge in structural analysis, design, and materials science.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.9; margin-bottom: 3rem; color: var(--text);">
+                    We are committed to training the next generation of structural engineers who will design and build safe, sustainable, and innovative infrastructure for Africa and beyond. Our graduates work in leading construction firms, consulting engineering companies, research institutions, and government agencies across the globe.
+                </p>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <div class="stat-number">40+</div>
+                    <div class="stat-label">Years of Excellence</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-number">10</div>
+                    <div class="stat-label">Faculty Members</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-number">300+</div>
+                    <div class="stat-label">Graduates Annually</div>
+                </div>
+                <div class="stat-card reveal">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Research Projects</div>
+                </div>
+            </div>
+
+            <div class="reveal" style="margin-top: 4rem;">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 2rem; color: var(--primary); margin-bottom: 1.5rem;">Our Mission</h3>
+                <p style="font-size: 1.1rem; line-height: 1.9; color: var(--text);">
+                    To provide world-class education in structural engineering, conduct cutting-edge research that addresses local and global challenges, and produce graduates who are equipped with the knowledge, skills, and ethical values to contribute meaningfully to society through the design and construction of safe, sustainable, and innovative infrastructure.
+                </p>
+            </div>
+
+            <div class="reveal" style="margin-top: 3rem;">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 2rem; color: var(--primary); margin-bottom: 1.5rem;">Our Vision</h3>
+                <p style="font-size: 1.1rem; line-height: 1.9; color: var(--text);">
+                    To be a leading center of excellence in structural engineering education and research in Africa, recognized internationally for our innovative contributions to sustainable infrastructure development and our commitment to addressing the unique challenges facing developing nations.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Faculty Page -->
+    <div id="faculty" class="page">
+        <section class="section" style="padding-top: 120px;">
+            <div class="reveal">
+                <h2 class="section-title">Our Faculty</h2>
+                <p class="section-subtitle">Meet our distinguished faculty</p>
+            </div>
+
+            <div class="faculty-grid">
+                <div class="faculty-card reveal" onclick="showProfessor('prof1')">
+                    <div class="faculty-image">CK</div>
+                    <div class="faculty-info">
+                        <h3>Prof. Charles Kankam</h3>
+                        <p class="title">Professor </p>
+                        <p>Specializes in Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus voluptatibus quibusdam blanditiis cupiditate necessitatibus voluptate impedit eligendi nam magni.</p>
+                    </div>
+                </div>
+                
+                <div class="faculty-card reveal" onclick="showProfessor('prof2')">
+                    <div class="faculty-image">RA</div>
+                    <div class="faculty-info">
+                        <h3>Dr. Russell Afrifa</h3>
+                        <p class="title"> Lecturer</p>
+                        <p>Expert in Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus voluptatibus quibusdam blanditiis cupiditate necessitatibus voluptate impedit eligendi nam magni.</p>
+                    </div>
+                </div>
+                
+                <div class="faculty-card reveal" onclick="showProfessor('prof3')">
+                    <div class="faculty-image">EA</div>
+                    <div class="faculty-info">
+                        <h3>Dr. Evans Amponsah</h3>
+                        <p class="title"> Lecturer</p>
+                        <p>Leading researcher in Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus voluptatibus quibusdam blanditiis cupiditate necessitatibus voluptate impedit eligendi nam magni.</p>
+                    </div>
+                </div>
+                
+                <div class="faculty-card reveal" onclick="showProfessor('prof4')">
+                    <div class="faculty-image">JT</div>
+                    <div class="faculty-info">
+                        <h3>Dr. Jones Twumasi</h3>
+                        <p class="title">Lecturer</p>
+                        <p>Focuses on Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus voluptatibus quibusdam blanditiis cupiditate necessitatibus voluptate impedit eligendi nam magni.</p>
+                    </div>
+                </div>
+                
+                <div class="faculty-card reveal" onclick="showProfessor('prof5')">
+                    <div class="faculty-image">JB</div>
+                    <div class="faculty-info">
+                        <h3>Dr. Jack Banahene</h3>
+                        <p class="title"> Lecturer</p>
+                        <p>Research interests focuses on Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus voluptatibus quibusdam blanditiis cupiditate necessitatibus voluptate impedit eligendi nam magni.</p>
+                    </div>
+                </div>
+
+                <div class="faculty-card reveal" onclick="showProfessor('prof6')">
+                    <div class="faculty-image">WA</div>
+                    <div class="faculty-info">
+                        <h3>Dr. Wiafe Ampofo</h3>
+                        <p class="title">Lecturer</p>
+                        <p>Specialist in Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque possimus voluptatibus quibusdam blanditiis cupiditate necessitatibus voluptate impedit eligendi nam magni.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Professor Detail Pages -->
+    <div id="prof1" class="page">
+        <section class="section" style="padding-top: 120px;">
+            <a href="#" class="back-button" onclick="showPage('faculty')">← Back to Faculty</a>
+            
+            <div class="professor-detail reveal">
+                <div class="professor-header">
+                    <div class="professor-avatar">CK</div>
+                    <div class="professor-bio">
+                        <h2>Prof. Charles Kankam</h2>
+                        <p class="position">Professor </p>
+                        <div class="contact-info">
+                            <a href="mailto:c.kankam@knust.edu.gh">c.kankam@knust.edu.gh</a>
+                            <span>|</span>
+                            <span>Office: CE Building, Room 305</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Biography</h3>
+                <p style="line-height: 1.8; margin-bottom: 2rem;">
+                    Porf. Charles Kankam Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti iure laborum ipsum necessitatibus dignissimos esse est quo temporibus quia officiis illum ut perspiciatis fugit in minima harum obcaecati a at quod, eum cumque accusantium quae laudantium iusto! Fugiat dicta iure nostrum, dolor odit natus vitae animi suscipit, ex minus fugit?
+                </p>
+
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Research Interests</h3>
+                <ul style="line-height: 2; margin-bottom: 2rem; margin-left: 1.5rem;">
+                    <li>Seismic design and analysis of structures</li>
+                    <li>Earthquake-resistant building systems</li>
+                    <li>Structural dynamics and vibration control</li>
+                    <li>Retrofitting of existing structures</li>
+                    <li>Performance-based seismic design</li>
+                </ul>
+
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Selected Publications</h3>
+                <ul style="line-height: 2; margin-left: 1.5rem;">
+                    <li>Kankam, C. (2024). "Seismic Vulnerability Assessment of Reinforced Concrete Buildings in Accra, Ghana." <em>Earthquake Engineering & Structural Dynamics, 53</em>(4), 1245-1267.</li>
+                    <li>Kankam, C., & Afrifa, R. (2023). "Development of Seismic Design Guidelines for West African Countries." <em>Journal of Structural Engineering, 149</em>(8), 04023089.</li>
+                    <li>Kankam, C. (2022). "Performance of Base-Isolated Structures Under Near-Fault Ground Motions." <em>Engineering Structures, 268</em>, 114752.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div id="prof2" class="page">
+        <section class="section" style="padding-top: 120px;">
+            <a href="#" class="back-button" onclick="showPage('faculty')">← Back to Faculty</a>
+            
+            <div class="professor-detail reveal">
+                <div class="professor-header">
+                    <div class="professor-avatar">RA</div>
+                    <div class="professor-bio">
+                        <h2>Dr. Russell Afrifa</h2>
+                        <p class="position"> Lecturer</p>
+                        <div class="contact-info">
+                            <a href="mailto:r.afrifa@knust.edu.gh">r.afrifa@knust.edu.gh</a>
+                            <span>|</span>
+                            <span>Office: CE Building, Room 312</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Biography</h3>
+                <p style="line-height: 1.8; margin-bottom: 2rem;">
+                    Dr. Russell Afrifa Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia debitis quo dolores. Nostrum vel, facilis error assumenda iste non eius tenetur consequatur cumque quidem vero totam aliquid enim blanditiis reprehenderit, esse unde harum, in reiciendis! Ratione quam impedit laudantium nesciunt praesentium aspernatur tenetur vel officiis beatae doloremque, laboriosam recusandae possimus dolore, obcaecati doloribus, suscipit fuga placeat sint similique veritatis est.
+                </p>
+
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Research Interests</h3>
+                <ul style="line-height: 2; margin-bottom: 2rem; margin-left: 1.5rem;">
+                    <li>Bamboo as a structural material</li>
+                    <li>Sustainable construction materials</li>
+                    <li>Recycled aggregates in concrete</li>
+                    <li>Low-cost housing solutions</li>
+                    <li>Material characterization and testing</li>
+                </ul>
+
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Selected Publications</h3>
+                <ul style="line-height: 2; margin-left: 1.5rem;">
+                    <li>Afrifa, R. (2024). "Structural Performance of Bamboo-Concrete Composite Beams for Affordable Housing." <em>Construction and Building Materials, 411</em>, 134567.</li>
+                    <li>Afrifa, R., & Amponsah, E. (2023). "Utilization of Recycled Concrete Aggregates in Ghana: Mechanical Properties and Durability." <em>Materials & Design, 228</em>, 111823.</li>
+                    <li>Afrifa, R. (2022). "Fire Resistance of Bamboo Structures: Experimental Investigation and Design Recommendations." <em>Fire Safety Journal, 132</em>, 103628.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div id="prof3" class="page">
+        <section class="section" style="padding-top: 120px;">
+            <a href="#" class="back-button" onclick="showPage('faculty')">← Back to Faculty</a>
+            
+            <div class="professor-detail reveal">
+                <div class="professor-header">
+                    <div class="professor-avatar">EA</div>
+                    <div class="professor-bio">
+                        <h2>Dr. Evans Amponsah</h2>
+                        <p class="position"> Lecturer </p>
+                        <div class="contact-info">
+                            <a href="mailto:e.amponsah@knust.edu.gh">e.amponsah@knust.edu.gh</a>
+                            <span>|</span>
+                            <span>Office: CE Building, Room 301</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Biography</h3>
+                <p style="line-height: 1.8; margin-bottom: 2rem;">
+                    Dr. Evans Amponsah Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum dolore tempora iusto quam, provident eum et ratione magnam modi quas velit doloribus dolor atque mollitia aspernatur rem laboriosam repudiandae recusandae, nobis vel. Praesentium, quaerat in! Natus necessitatibus explicabo eaque nostrum.
+                </p>
+
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Research Interests</h3>
+                <ul style="line-height: 2; margin-bottom: 2rem; margin-left: 1.5rem;">
+                    <li>Structural dynamics and vibration analysis</li>
+                    <li>Finite element method and computational mechanics</li>
+                    <li>Nonlinear structural behavior</li>
+                    <li>Wind engineering and tall buildings</li>
+                    <li>Structural health monitoring</li>
+                </ul>
+
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Selected Publications</h3>
+                <ul style="line-height: 2; margin-left: 1.5rem;">
+                    <li>Amponsah, E., & Banahene, J. (2024). "Advanced Finite Element Modeling of Concrete-Filled Steel Tubular Columns." <em>Journal of Constructional Steel Research, 215</em>, 108543.</li>
+                    <li>Amponsah, E. (2023). "Dynamic Response of High-Rise Buildings to Wind Loading in Tropical Climates." <em>Journal of Wind Engineering and Industrial Aerodynamics, 242</em>, 105589.</li>
+                    <li>Amponsah, E., Kankam, C., & Ampofo, W. (2022). "Nonlinear Analysis of Reinforced Concrete Frames Subjected to Progressive Collapse." <em>Engineering Structures, 271</em>, 114923.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div id="prof4" class="page">
+        <section class="section" style="padding-top: 120px;">
+            <a href="#" class="back-button" onclick="showPage('faculty')">← Back to Faculty</a>
+            
+            <div class="professor-detail reveal">
+                <div class="professor-header">
+                    <div class="professor-avatar">JT</div>
+                    <div class="professor-bio">
+                        <h2>Dr. Jones Twumasi</h2>
+                        <p class="position">Lecturer</p>
+                        <div class="contact-info">
+                            <a href="mailto:j.twumasi@knust.edu.gh">j.twumasi@knust.edu.gh</a>
+                            <span>|</span>
+                            <span>Office: CE Building, Room 318</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Biography</h3>
+                <p style="line-height: 1.8; margin-bottom: 2rem;">
+                    Dr. Jones Twumasi Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eveniet consequuntur odio quae nulla maxime repudiandae excepturi mollitia. Saepe illo quae nisi, magni dicta sint asperiores natus sapiente obcaecati quis quas, inventore repudiandae. Ducimus numquam accusantium, ut harum neque, doloribus id maiores placeat, consequuntur dolorum eius delectus cum!
+                    .
+                </p>
+
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Research Interests</h3>
+                <ul style="line-height: 2; margin-bottom: 2rem; margin-left: 1.5rem;">
+                    <li>Bridge design and analysis</li>
+                    <li>Infrastructure resilience and adaptation</li>
+                    <li>Structural reliability and risk assessment</li>
+                    <li>Life-cycle analysis of bridges</li>
+                    <li>Climate change impacts on infrastructure</li>
+                </ul>
+
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Selected Publications</h3>
+                <ul style="line-height: 2; margin-left: 1.5rem;">
+                    <li>Twumasi, J. (2024). "Assessment of Climate Change Impacts on Bridge Infrastructure in Ghana." <em>Structure and Infrastructure Engineering, 20</em>(3), 445-462.</li>
+                    <li>Twumasi, J., & Amponsah, E. (2023). "Life-Cycle Cost Analysis of Bridge Maintenance Strategies in Tropical Environments." <em>Journal of Bridge Engineering, 28</em>(7), 04023045.</li>
+                    <li>Twumasi, J. (2022). "Structural Health Monitoring of Cable-Stayed Bridges Using Wireless Sensor Networks." <em>Smart Structures and Systems, 29</em>(4), 567-581.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div id="prof5" class="page">
+        <section class="section" style="padding-top: 120px;">
+            <a href="#" class="back-button" onclick="showPage('faculty')">← Back to Faculty</a>
+            
+            <div class="professor-detail reveal">
+                <div class="professor-header">
+                    <div class="professor-avatar">JB</div>
+                    <div class="professor-bio">
+                        <h2>Dr. Jack Banahene</h2>
+                        <p class="position"> Lecturer</p>
+                        <div class="contact-info">
+                            <a href="mailto:j.banahene@knust.edu.gh">j.banahene@knust.edu.gh</a>
+                            <span>|</span>
+                            <span>Office: CE Building, Room 315</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Biography</h3>
+                <p style="line-height: 1.8; margin-bottom: 2rem;">
+                    Dr. Jack Banahene Lorem ipsum dolor sit amet consectetur adipisicing elit. A, sequi soluta! Ab suscipit aspernatur autem blanditiis necessitatibus dolore iure, id consequuntur vero inventore ex quaerat magni corrupti aperiam harum, officia ullam cumque accusamus cum temporibus reiciendis beatae esse commodi pariatur..
+                </p>
+
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Research Interests</h3>
+                <ul style="line-height: 2; margin-bottom: 2rem; margin-left: 1.5rem;">
+                    <li>Structural optimization and design automation</li>
+                    <li>Tall building structures</li>
+                    <li>Computational mechanics and algorithms</li>
+                    <li>Performance-based design</li>
+                    <li>AI and machine learning in structural engineering</li>
+                </ul>
+
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Selected Publications</h3>
+                <ul style="line-height: 2; margin-left: 1.5rem;">
+                    <li>Banahene, J. (2024). "Machine Learning-Based Optimization of Tall Building Structural Systems." <em>Automation in Construction, 159</em>, 105234.</li>
+                    <li>Banahene, J., & Amponsah, E. (2023). "Multi-Objective Optimization of Reinforced Concrete Frame Structures Considering Cost and Carbon Footprint." <em>Engineering Optimization, 55</em>(9), 1567-1585.</li>
+                    <li>Banahene, J. (2022). "Topology Optimization of Tall Building Cores for Lateral Load Resistance." <em>Structural and Multidisciplinary Optimization, 66</em>(3), 52.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div id="prof6" class="page">
+        <section class="section" style="padding-top: 120px;">
+            <a href="#" class="back-button" onclick="showPage('faculty')">← Back to Faculty</a>
+            
+            <div class="professor-detail reveal">
+                <div class="professor-header">
+                    <div class="professor-avatar">WA</div>
+                    <div class="professor-bio">
+                        <h2>Dr. Wiafe Ampofo</h2>
+                        <p class="position">Lecturer</p>
+                        <div class="contact-info">
+                            <a href="mailto:w.ampofo@knust.edu.gh">w.ampofo@knust.edu.gh</a>
+                            <span>|</span>
+                            <span>Office: CE Building, Room 320</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Biography</h3>
+                <p style="line-height: 1.8; margin-bottom: 2rem;">
+                    Dr. Wiafe Ampofo is Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa fugiat, consequatur totam, nisi, dolorum rerum soluta laborum quas voluptatibus omnis amet tenetur nulla voluptas nobis deserunt facilis in? Assumenda eveniet sint aliquid facilis porro, sequi doloremque consectetur, quam magnam, iusto quod esse inventore ea voluptatibus optio iure perferendis laudantium 
+
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Research Interests</h3>
+                <ul style="line-height: 2; margin-bottom: 2rem; margin-left: 1.5rem;">
+                    <li>Concrete technology and mix design</li>
+                    <li>Durability of structures in tropical climates</li>
+                    <li>Corrosion of reinforced concrete</li>
+                    <li>Self-healing concrete and smart materials</li>
+                    <li>Non-destructive testing methods</li>
+                </ul>
+
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 1.8rem; color: var(--primary); margin-bottom: 1rem;">Selected Publications</h3>
+                <ul style="line-height: 2; margin-left: 1.5rem;">
+                    <li>Ampofo, W. (2024). "Performance of Self-Healing Concrete in Marine Environments: A West African Case Study." <em>Cement and Concrete Composites, 146</em>, 105389.</li>
+                    <li>Ampofo, W., & Afrifa, R. (2023). "Chloride Penetration Resistance of Concrete Made with Local Pozzolanic Materials in Ghana." <em>Construction and Building Materials, 392</em>, 131876.</li>
+                    <li>Ampofo, W. (2022). "Service Life Prediction of Reinforced Concrete Structures in Tropical Coastal Regions." <em>Structural Concrete, 23</em>(5), 3214-3229.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- News & Events Page -->
+    <!-- <div id="news" class="page">
+        <section class="section" style="padding-top: 120px;">
+            <div class="reveal">
+                <h2 class="section-title">News & Events</h2>
+                <p class="section-subtitle">Stay updated with the latest happenings in our section</p>
+            </div>
+
+            <div class="news-grid">
+                <div class="news-card featured reveal">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop" alt="Conference">
+                        <div class="news-badge">Featured</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">January 10, 2026</span>
+                            <span class="news-category">Conference</span>
+                        </div>
+                        <h3>International Conference on Structural Engineering 2026</h3>
+                        <p>The Structural Section is proud to host the 5th International Conference on Structural Engineering and Construction Materials in Africa. The conference will bring together researchers, practitioners, and industry leaders from across the globe to discuss the latest advances in structural engineering.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="news-card reveal">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=500&fit=crop" alt="Workshop">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">December 15, 2025</span>
+                            <span class="news-category">Workshop</span>
+                        </div>
+                        <h3>Seismic Design Workshop for Industry Professionals</h3>
+                        <p>Dr. Charles Kankam led a two-day intensive workshop on seismic design principles for practicing engineers from across Ghana. Over 50 participants benefited from hands-on training using the latest design software.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="news-card reveal">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?w=800&h=500&fit=crop" alt="Research">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">November 28, 2025</span>
+                            <span class="news-category">Research</span>
+                        </div>
+                        <h3>Breakthrough in Bamboo Structural Applications</h3>
+                        <p>Dr. Russell Afrifa's research team has developed a new treatment method for bamboo that significantly enhances its structural properties, making it a viable alternative to conventional materials for low-cost housing.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="news-card reveal">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=500&fit=crop" alt="Award">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">October 5, 2025</span>
+                            <span class="news-category">Award</span>
+                        </div>
+                        <h3>Dr. Jack Banahene Wins Best Paper Award</h3>
+                        <p>Dr. Banahene received the Best Paper Award at the International Conference on Computational Methods in Structural Engineering for his groundbreaking work on AI-driven structural optimization.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="news-card reveal">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=800&h=500&fit=crop" alt="Infrastructure">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">September 20, 2025</span>
+                            <span class="news-category">Project</span>
+                        </div>
+                        <h3>New Bridge Assessment Project Launched</h3>
+                        <p>Dr. Jones Twumasi leads a major research project funded by the Ghana Highway Authority to assess the structural integrity of critical bridges across the country and develop maintenance strategies.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <div class="news-card reveal">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?w=800&h=500&fit=crop" alt="Students">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">August 12, 2025</span>
+                            <span class="news-category">Academic</span>
+                        </div>
+                        <h3>New MSc Programme in Earthquake Engineering</h3>
+                        <p>The Structural Section announces a new specialized Master's programme in Earthquake Engineering, the first of its kind in West Africa, starting in the 2026/2027 academic year.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reveal" style="margin-top: 4rem;">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 2.2rem; color: var(--primary); margin-bottom: 2rem;">Upcoming Events</h3>
+                <div class="events-timeline">
+                    <div class="event-item reveal">
+                        <div class="event-date">
+                            <span class="day">25</span>
+                            <span class="month">JAN</span>
+                        </div>
+                        <div class="event-details">
+                            <h4>Seminar: Advanced Finite Element Analysis</h4>
+                            <p>Guest lecture by Prof. John Smith from MIT on advanced FEA techniques for nonlinear structural problems.</p>
+                            <span class="event-time">📍 CE Auditorium | ⏰ 2:00 PM - 4:00 PM</span>
+                        </div>
+                    </div>
+
+                    <div class="event-item reveal">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">FEB</span>
+                        </div>
+                        <div class="event-details">
+                            <h4>Graduate Students Research Symposium</h4>
+                            <p>Annual symposium where PhD and MSc students present their research findings to faculty and industry partners.</p>
+                            <span class="event-time">📍 KNUST Campus | ⏰ 9:00 AM - 5:00 PM</span>
+                        </div>
+                    </div>
+
+                    <div class="event-item reveal">
+                        <div class="event-date">
+                            <span class="day">5</span>
+                            <span class="month">MAR</span>
+                        </div>
+                        <div class="event-details">
+                            <h4>Industry Partnership Forum</h4>
+                            <p>Networking event connecting our faculty and students with leading engineering firms and construction companies.</p>
+                            <span class="event-time">📍 Great Hall, KNUST | ⏰ 10:00 AM - 3:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div> -->
+
+    <!-- Programmes Page -->
+    <div id="programmes" class="page">
+        <section class="section" style="padding-top: 120px;">
+            <div class="reveal">
+                <h2 class="section-title">Our Programmes</h2>
+                <p class="section-subtitle">Join our world-class graduate programmes in structural engineering</p>
+            </div>
+
+            <div class="programme-highlight reveal">
+                <div class="highlight-content">
+                    <h3>Apply to Our Graduate Programmes</h3>
+                    <p>The Structural Engineering Section offers comprehensive graduate programmes designed to develop high-caliber researchers and industry-ready professionals. Our programmes combine high academic training with practical research experience.</p>
+                    <div class="highlight-stats">
+                        <div class="highlight-stat">
+                            <strong>150+</strong>
+                            <span>Graduates Trained</span>
+                        </div>
+                        <div class="highlight-stat">
+                            <strong>GHS 5,000,000+</strong>
+                            <span>Research Grants</span>
+                        </div>
+                        <div class="highlight-stat">
+                            <strong>20+</strong>
+                            <span>Active Research Projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="programmes-grid">
+                <div class="programme-card reveal">
+                    <div class="programme-header">
+                        <h3>PhD in Structural Engineering</h3>
+                        <span class="programme-duration">3-4 Years Full-Time</span>
+                    </div>
+                    <div class="programme-body">
+                        <h4>Specializations:</h4>
+                        <ul>
+                            <li>Earthquake Engineering and Seismic Design</li>
+                            <li>Structural Dynamics and Vibration Control</li>
+                            <li>Computational Mechanics and FEM</li>
+                            <li>Sustainable Construction Materials</li>
+                            <li>Bridge and Infrastructure Engineering</li>
+                            <li>Concrete Technology and Durability</li>
+                        </ul>
+                        <h4>Entry Requirements:</h4>
+                        <ul>
+                            <li>Master's degree in Civil/Structural Engineering or related field (minimum 60% average)</li>
+                            <li>Research proposal in chosen specialization area</li>
+                            <li>Two academic references</li>
+                            <li>TOEFL/IELTS for non-Anglophone applicants</li>
+                        </ul>
+                        <div class="programme-benefits">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="programme-card reveal">
+                    <div class="programme-header">
+                        <h3>MPhil in Structural Engineering</h3>
+                        <span class="programme-duration">18-24 Months Full-Time</span>
+                    </div>
+                    <div class="programme-body">
+                        <h4>Programme Focus:</h4>
+                        <ul>
+                            <li>Advanced Structural Analysis</li>
+                            <li>Design of Steel and Concrete Structures</li>
+                            <li>Earthquake-Resistant Design</li>
+                            <li>Research Methods in Structural Engineering</li>
+                            <li>Computational Modeling and Simulation</li>
+                            <li>Thesis Research Project</li>
+                        </ul>
+                        <h4>Entry Requirements:</h4>
+                        <ul>
+                            <li>First or Second Class (Upper Division) in BSc Civil Engineering or related discipline</li>
+                            <li>Strong background in structural mechanics and mathematics</li>
+                            <li>Two academic references</li>
+                            <li>Statement of purpose</li>
+                        </ul>
+                        <div class="programme-benefits">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="programme-card reveal">
+                    <div class="programme-header">
+                        <h3>MSc in Structural Engineering</h3>
+                        <span class="programme-duration">12-18 Months Full-Time</span>
+                    </div>
+                    <div class="programme-body">
+                        <h4>Core Courses:</h4>
+                        <ul>
+                            <li>Advanced Reinforced Concrete Design</li>
+                            <li>Steel Structures and Connections</li>
+                            <li>Finite Element Analysis</li>
+                            <li>Structural Dynamics</li>
+                            <li>Foundation Engineering</li>
+                            <li>Project Work and Dissertation</li>
+                        </ul>
+                        <h4>Entry Requirements:</h4>
+                        <ul>
+                            <li>Second Class (Lower Division) or better in BSc Civil Engineering</li>
+                            <li>Minimum of 2 years professional experience (for part-time option)</li>
+                            <li>Professional references</li>
+                            <li>Interview may be required</li>
+                        </ul>
+                        <div class="programme-benefits">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="application-section reveal">
+                <h3>How to Apply</h3>
+                <div class="application-steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4>Prepare Documents</h4>
+                        <p>Gather all required academic transcripts, certificates, reference letters, and supporting documents.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4>Complete Application</h4>
+                        <p>Visit the KNUST Graduate Studies portal at <a href="https://apps.knust.edu.gh/admissions/" target="_blank">apps.knust.edu.gh/admissions/</a> to complete your online application.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4>Submit & Interview</h4>
+                        <p>Submit your application and supporting documents. Shortlisted candidates will be invited for an interview.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h4>Acceptance</h4>
+                        <p>Successful applicants will receive admission letters and information about registration and orientation.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-box reveal">
+                <h3>For More Information</h3>
+                <p>Contact the Structural Engineering Section for inquiries about our programmes:</p>
+                <div class="contact-details">
+                    <p><strong>Email:</strong> structural@civil.knust.edu.gh</p>
+                    <p><strong>Phone:</strong> +233 123 456 789</p>
+                    <p><strong>Office:</strong> Department of Civil Engineering, KNUST, Kumasi</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Research Page -->
+    <div id="research" class="page">
+        <section class="section" style="padding-top: 120px;">
+            <div class="reveal">
+                <h2 class="section-title">Research Excellence</h2>
+                <p class="section-subtitle">Advancing structural engineering through innovative research</p>
+            </div>
+
+            <div class="research-grid">
+                <div class="research-card reveal">
+                    <h3>Seismic Engineering</h3>
+                    <p> Our seismic Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugiat mollitia quibusdam! Officiis quaerat mollitia autem odio dignissimos. Eveniet itaque distinctio minima fugit fuga praesentium esse mollitia, maiores iste sapiente explicabo placeat dicta libero culpa vel facere exercitationem nisi amet harum! Porro fugit, illum omnis nobis dignissimos at quaerat maxime velit debitis perspiciatis inventore officiis cum nihil modi expedita iusto autem hic assumenda qui. Libero fugit similique dicta facilis perferendis!</p>
+                </div>
+                
+                <div class="research-card reveal">
+                    <h3>Sustainable Construction Materials</h3>
+                    <p> This research area Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugiat mollitia quibusdam! Officiis quaerat mollitia autem odio dignissimos. Eveniet itaque distinctio minima fugit fuga praesentium esse mollitia, maiores iste sapiente explicabo placeat dicta libero culpa vel facere exercitationem nisi amet harum! Porro fugit, illum omnis nobis dignissimos at quaerat maxime velit debitis perspiciatis inventore officiis cum nihil modi expedita iusto autem hic assumenda qui. Libero fugit similique dicta facilis perferendis!</p>
+                </div>
+                
+                <div class="research-card reveal">
+                    <h3>Structural Dynamics </h3>
+                    <p> Our structural dynamics Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugiat mollitia quibusdam! Officiis quaerat mollitia autem odio dignissimos. Eveniet itaque distinctio minima fugit fuga praesentium esse mollitia, maiores iste sapiente explicabo placeat dicta libero culpa vel facere exercitationem nisi amet harum! Porro fugit, illum omnis nobis dignissimos at quaerat maxime velit debitis perspiciatis inventore officiis cum nihil modi expedita iusto autem hic assumenda qui. Libero fugit similique dicta facilis perferendis!</p>
+                </div>
+                
+                <div class="research-card reveal">
+                    <h3>Structural Health Monitoring</h3>
+                    <p> The SHM Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugiat mollitia quibusdam! Officiis quaerat mollitia autem odio dignissimos. Eveniet itaque distinctio minima fugit fuga praesentium esse mollitia, maiores iste sapiente explicabo placeat dicta libero culpa vel facere exercitationem nisi amet harum! Porro fugit, illum omnis nobis dignissimos at quaerat maxime velit debitis perspiciatis inventore officiis cum nihil modi expedita iusto autem hic assumenda qui. Libero fugit similique dicta facilis perferendis!</p>
+                </div>
+                
+                <div class="research-card reveal">
+                    <h3>Concrete Durability</h3>
+                    <p> Research in this area Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugiat mollitia quibusdam! Officiis quaerat mollitia autem odio dignissimos. Eveniet itaque distinctio minima fugit fuga praesentium esse mollitia, maiores iste sapiente explicabo placeat dicta libero culpa vel facere exercitationem nisi amet harum! Porro fugit, illum omnis nobis dignissimos at quaerat maxime velit debitis perspiciatis inventore officiis cum nihil modi expedita iusto autem hic assumenda qui. Libero fugit similique dicta facilis perferendis!</p>
+                </div>
+                
+                <div class="research-card reveal">
+                    <h3>Computational Mechanics</h3>
+                    <p> This research  develops advanced numerical methods Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus fugiat mollitia quibusdam! Officiis quaerat mollitia autem odio dignissimos. Eveniet itaque distinctio minima fugit fuga praesentium esse mollitia, maiores iste sapiente explicabo placeat dicta libero culpa vel facere exercitationem nisi amet harum! Porro fugit, illum omnis nobis dignissimos at quaerat maxime velit debitis perspiciatis inventore officiis cum nihil modi expedita iusto autem hic assumenda qui. Libero fugit similique dicta facilis perferendis!</p>
+                </div>
+            </div>
+
+            <div class="reveal" style="margin-top: 4rem;">
+                <h3 style="font-family: 'Crimson Pro', serif; font-size: 2.2rem; color: var(--primary); margin-bottom: 1.5rem;">Research Facilities</h3>
+                <div class="research-grid">
+                    <div class="research-card">
+                        <h3>Structures Laboratory</h3>
+                        <p>Our well-equipped structures laboratory features a universal testing machine, hydraulic actuators for cyclic loading, data acquisition systems, and strain measurement equipment. The facility supports research on structural components and materials testing.</p>
+                    </div>
+                    <div class="research-card">
+                        <h3>Concrete Lab</h3>
+                        <p>The concrete laboratory is equipped for the preparation, curing, and testing of concrete specimens to assess both fresh and hardened properties. Facilities include batching and mixing equipment, slump and flow test apparatus, cube and cylinder moulds, curing tanks, compression testing machines, and durability testing setups for strength and quality evaluation.</p>
+                    </div>
+                    <div class="research-card">
+                        <h3>Computational Lab</h3>
+                        <p>Our computational laboratory provides high-performance computing resources and licensed software for structural analysis including ANSYS, SAP2000, ETABS, and ABAQUS. Students and researchers have access to workstations for complex numerical simulations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Publications Page -->
+    <div id="publications" class="page">
+        <section class="section" style="padding-top: 120px;">
+            <div class="reveal">
+                <h2 class="section-title">Recent Publications</h2>
+                <p class="section-subtitle">Selected publications from our faculty members (2022-2024)</p>
+            </div>
+
+            <div class="publications-list">
+                <div class="publication-item reveal">
+                    <h4>Seismic Vulnerability Assessment of Reinforced Concrete Buildings in Accra, Ghana</h4>
+                    <p class="authors">Kankam, C.</p>
+                    <p class="journal">Earthquake Engineering & Structural Dynamics, 53(4), 1245-1267, 2024</p>
+                </div>
+
+                <div class="publication-item reveal">
+                    <h4>Structural Performance of Bamboo-Concrete Composite Beams for Affordable Housing</h4>
+                    <p class="authors">Afrifa, R.</p>
+                    <p class="journal">Construction and Building Materials, 411, 134567, 2024</p>
+                </div>
+
+                <div class="publication-item reveal">
+                    <h4>Advanced Finite Element Modeling of Concrete-Filled Steel Tubular Columns</h4>
+                    <p class="authors">Amponsah, E., & Banahene, J.</p>
+                    <p class="journal">Journal of Constructional Steel Research, 215, 108543, 2024</p>
+                </div>
+
+                <div class="publication-item reveal">
+                    <h4>Assessment of Climate Change Impacts on Bridge Infrastructure in Ghana</h4>
+                    <p class="authors">Twumasi, J.</p>
+                    <p class="journal">Structure and Infrastructure Engineering, 20(3), 445-462, 2024</p>
+                </div>
+
+                <div class="publication-item reveal">
+                    <h4>Machine Learning-Based Optimization of Tall Building Structural Systems</h4>
+                    <p class="authors">Banahene, J.</p>
+                    <p class="journal">Automation in Construction, 159, 105234, 2024</p>
+                </div>
+
+                <div class="publication-item reveal">
+                    <h4>Performance of Self-Healing Concrete in Marine Environments: A West African Case Study</h4>
+                    <p class="authors">Ampofo, W.</p>
+                    <p class="journal">Cement and Concrete Composites, 146, 105389, 2024</p>
+                </div>
+
+                <div class="publication-item reveal">
+                    <h4>Development of Seismic Design Guidelines for West African Countries</h4>
+                    <p class="authors">Kankam, C., & Afrifa, R.</p>
+                    <p class="journal">Journal of Structural Engineering, 149(8), 04023089, 2023</p>
+                </div>
+
+                <div class="publication-item reveal">
+                    <h4>Dynamic Response of High-Rise Buildings to Wind Loading in Tropical Climates</h4>
+                    <p class="authors">Amponsah, E.</p>
+                    <p class="journal">Journal of Wind Engineering and Industrial Aerodynamics, 242, 105589, 2023</p>
+                </div>
+
+                <div class="publication-item reveal">
+                    <h4>Utilization of Recycled Concrete Aggregates in Ghana: Mechanical Properties and Durability</h4>
+                    <p class="authors">Afrifa, R., & Amponsah, E.</p>
+                    <p class="journal">Materials & Design, 228, 111823, 2023</p>
+                </div>
+
+                <div class="publication-item reveal">
+                    <h4>Life-Cycle Cost Analysis of Bridge Maintenance Strategies in Tropical Environments</h4>
+                    <p class="authors">Twumasi, J., & Amponsah, E.</p>
+                    <p class="journal">Journal of Bridge Engineering, 28(7), 04023045, 2023</p>
+                </div>
+
+                <div class="publication-item reveal">
+                    <h4>Multi-Objective Optimization of Reinforced Concrete Frame Structures Considering Cost and Carbon Footprint</h4>
+                    <p class="authors">Banahene, J., & Amponsah, E.</p>
+                    <p class="journal">Engineering Optimization, 55(9), 1567-1585, 2023</p>
+                </div>
+
+                <div class="publication-item reveal">
+                    <h4>Chloride Penetration Resistance of Concrete Made with Local Pozzolanic Materials in Ghana</h4>
+                    <p class="authors">Ampofo, W., & Afrifa, R.</p>
+                    <p class="journal">Construction and Building Materials, 392, 131876, 2023</p>
+                </div>
+
+                <div class="publication-item reveal">
+                    <h4>Performance of Base-Isolated Structures Under Near-Fault Ground Motions</h4>
+                    <p class="authors">Kankam, C.</p>
+                    <p class="journal">Engineering Structures, 268, 114752, 2022</p>
+                </div>
+
+                <div class="publication-item reveal">
+                    <h4>Nonlinear Analysis of Reinforced Concrete Frames Subjected to Progressive Collapse</h4>
+                    <p class="authors">Amponsah, E., Kankam, C., & Ampofo, W.</p>
+                    <p class="journal">Engineering Structures, 271, 114923, 2022</p>
+                </div>
+
+                <div class="publication-item reveal">
+                    <h4>Fire Resistance of Bamboo Structures: Experimental Investigation and Design Recommendations</h4>
+                    <p class="authors">Afrifa, R.</p>
+                    <p class="journal">Fire Safety Journal, 132, 103628, 2022</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Department of Civil Engineering</p>
+                <p>Kwame Nkrumah University of Science and Technology</p>
+                <p>Kumasi, Ghana</p>
+                <p>Email: civil@knust.edu.gh</p>
+                <p>Phone: +233 123 456 789</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#" onclick="showPage('home')">Home</a>
+                <a href="#" onclick="showPage('about')">About Us</a>
+                <a href="#" onclick="showPage('faculty')">Faculty</a>
+                <a href="#" onclick="showPage('research')">Research</a>
+                <a href="#" onclick="showPage('news')">News & Events</a>
+                <a href="#" onclick="showPage('programmes')">Programmes</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>University Links</h4>
+                <a href="https://www.knust.edu.gh" target="_blank">KNUST Homepage</a>
+                <a href="https://www.knust.edu.gh/admissions" target="_blank">Admissions</a>
+                <a href="https://www.knust.edu.gh/academics" target="_blank">Academic Programs</a>
+                <a href="https://www.knust.edu.gh/research" target="_blank">Research at KNUST</a>
+            </div>
+
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <p>Follow our latest research and activities on social media</p>
+                <p style="margin-top: 1rem;">
+                    <a href="#" style="margin-right: 1rem;">Facebook</a>
+                    <a href="#" style="margin-right: 1rem;">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 KNUST Department of Civil Engineering - Structural Section. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
